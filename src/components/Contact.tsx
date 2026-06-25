@@ -28,6 +28,7 @@ const DiscordIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const ContactItem = ({ title, value, icon, action, href }: any) => {
   const content = (
     <div className="bg-surface/40 backdrop-blur-md border border-primary/10 hover:border-primary/30 rounded-xl p-4 transition-all group relative overflow-hidden h-full">
@@ -83,7 +84,7 @@ export function Contact() {
       } else {
         toast.error("Failed to send message. Please try again.");
       }
-    } catch (error) {
+    } catch (error: unknown) {
       toast.error("An error occurred. Please try again later.");
     } finally {
       setIsSubmitting(false);
@@ -112,7 +113,7 @@ export function Contact() {
         >
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 uppercase tracking-wide">PORTFOLIO</h2>
           <p className="text-text-muted max-w-2xl mx-auto text-lg">
-            Let's build something awesome together
+            Let&apos;s build something awesome together
           </p>
         </motion.div>
 
@@ -264,7 +265,7 @@ export function Contact() {
                   </a>
                 </div>
                 <a href="https://wa.me/923223624954" target="_blank" rel="noreferrer" className="w-full py-2.5 bg-background/50 border border-primary/20 hover:border-primary/40 rounded-xl text-sm font-medium hover:bg-primary/10 transition-colors text-text-main text-center inline-block">
-                  Let's chat directly
+                  Let&apos;s chat directly
                 </a>
               </div>
 

@@ -58,7 +58,7 @@ export function About() {
               the power of bringing ideas to life through code.
             </p>
             <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-12 md:px-8 font-light">
-              Fast-forward to today, I'm a passionate <span className="text-primary font-semibold">MERN Stack Developer</span> with a strong focus on building 
+              Fast-forward to today, I&apos;m a passionate <span className="text-primary font-semibold">MERN Stack Developer</span> with a strong focus on building 
               accessible, inclusive products and digital experiences. I thrive on creating intuitive architectures, 
               writing clean code, and constantly pushing my boundaries to learn new technologies.
             </p>

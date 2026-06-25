@@ -2,9 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useTheme } from "next-themes";
-import { Moon, Sun, Menu, X, Palette } from "lucide-react";
-import Image from "next/image";
+import { Menu, X } from "lucide-react";
 
 const links = [
   { name: "Home", href: "#home" },
@@ -18,14 +16,8 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-  const [themeDropdownOpen, setThemeDropdownOpen] = useState(false);
-  
-  const themes = ['light', 'dark'];
 
   useEffect(() => {
-    setMounted(true);
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
 

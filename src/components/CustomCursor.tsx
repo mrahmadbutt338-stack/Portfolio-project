@@ -38,7 +38,7 @@ export function CustomCursor() {
     if (canvas) {
       const ctx = canvas.getContext("2d");
       if (ctx) {
-        let particles: { x: number; y: number; vx: number; vy: number; life: number; size: number; color: string }[] = [];
+        const particles: { x: number; y: number; vx: number; vy: number; life: number; size: number; color: string }[] = [];
         
         const resize = () => {
           canvas.width = window.innerWidth;
